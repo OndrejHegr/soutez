@@ -1,0 +1,7 @@
+{
+    "require": {
+        "dibi/dibi": "*",
+        "tracy/tracy": "^2.10",
+        "james-heinrich/getid3": "^1.9"
+    }
+}

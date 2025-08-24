@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# statické soubory obsloužit přímo
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# všechno ostatní pošli na index.php (zachovej query string)
+RewriteRule ^ index.php [L,QSA]
